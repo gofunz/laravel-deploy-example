@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: cimg/php:8.1.9-node
+    steps:
+      - checkout
+      - run: php --version
+      - run: node --version
